@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/indexcss.css">
+    <title>Jane Doe</title>
+</head>
+<body>
+
+    <header>
+        <h1>JANE DOE</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="musica.html">Musica</a></li>
+                <li><a href="contato.html" style="font-weight: bolder; color: rgb(241, 37, 10);">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="spacer"></div>
+    <main id="contato">
+        <h2>Contato</h2>
+        <section class="duas_colunas">
+            <!-- coluna 1 -->
+            <div class="coluna">
+                <form name="contato" method="POST" data-netlify="true">
+                    <div class="form_group">
+                        <label for="nome">Nome</label>
+                        <input placeholder="Nome Completo" type="text" name="nome" id="nome"/>
+                    </div>
+                    <div class="form_group">
+                        <label for="email">E-mail</label>
+                        <input placeholder="exemplo@exemplo.com" type="email" name="email" id="email"/>
+                    </div>
+                    <div class="form_group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea placeholder="Escreva sua mensagem para Jane Doe" type="text" name="mensagem" id="mensagem"></textarea>
+                    </div>
+                    <div class="radio_group">
+                        <p>Como você conheceu a música da Jane?</p>
+                        <input type="radio" name="found" id="instagram">
+                        <label for="instagram">Instagram</label><br>
+                        <input type="radio" name="found" id="facebook">
+                        <label for="facebook">Facebook</label><br>
+                        <input type="radio" name="found" id="youtube">
+                        <label for="youtube">Youtube</label>
+                    </div>
+                    <div class="radio_group">
+                        <input type="checkbox" name="newsletter" id="newsletter">
+                        <label for="newsletter">Gostaria de assinar nossa Newsletter?</label>
+                    </div>
+                    <div class="form_group">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <!-- coluna 2 -->
+            <div class="mapouter coluna">
+                <div class="gmap_canvas">
+                    <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=digital%20house&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <!-- <a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/">elegant themes coupon</a> -->
+                </div>
+            </div>
+        </section>
+        <section class="pt2">
+            <div id="line"></div>
+            <h2>GESTÃO | Karen Blanche</h2>
+            <p>E-mail: info@mysite.com.br</p>
+            <p>Telefone: +55 11 98765-4321</p>
+            <div id="line"></div>
+            <h2>BOOKING | Vitória Lucena</h2>
+            <p>E-mail: info@mysite.com.br</p>
+            <p>Telefone: +55 11 98765-4321</p>
+            <div id="line"></div>
+            <h2>BUSINESSMAN | Marcos Sabá</h2>
+            <p>E-mail: info@mysite.com.br</p>
+            <p>Telefone: +55 11 98765-4321</p>
+            <div id="line"></div>
+            <h2>SHOWS | Bete Marcolino</h2>
+            <p>E-mail: info@mysite.com.br</p>
+            <p>Telefone: +55 11 98765-4321</p>
+        </section>
+    </main>
+    <div id="spacer"></div>
+    <footer>
+        <p>Copyright - Jane Doe</p>
+    </footer>
+
+</body>
+</html>

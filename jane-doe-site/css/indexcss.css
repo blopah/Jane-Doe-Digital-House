@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+#spacer {
+    height: 100px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: #FFF;
+    box-shadow: 0px 0px 10px black;
+
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #555;
+}
+
+footer {
+    position: fixed;
+    text-align: center;
+    background-color: #eee;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+}
+
+footer p {
+    margin: 0;
+    padding: 10px;
+}
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+a:hover {
+    color: rgb(241, 37, 10);
+}
+
+/* HOME */
+
+#banner {
+    width: 100%;
+    margin-top: -120px;
+}
+
+section.concept {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section.musics {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+section.musics div:nth-of-type(1) {
+    flex: 1;
+}
+
+section.musics div:nth-of-type(1) img#ilustracao {
+    width: 100%;
+}
+
+section.musics div:nth-of-type(2) {
+    flex: 1;
+}
+
+section.musics div:nth-of-type(2) ol {
+    width: 100%;
+    font-size: 21px;
+    line-height: 70px;
+}
+
+section.musics div:nth-of-type(2) ol li span {
+    color: #F9A826;
+    font-weight: bold;
+}
+
+/* CONTACT */
+section.duas_colunas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+section.duas_colunas div {
+    flex-grow: 1;
+    margin: 20px;
+}
+
+main#contato {
+    width: 100%;
+    margin: 70px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+}
+
+main#contato form div.form_group {
+    font-size: 24px;
+}
+
+main#contato form div.radio_group {
+    font-size: 24px;
+}
+
+main#contato form div.form_group input {
+    padding: 10px;
+    font-size: 22px;
+    width: 100%
+}
+
+main#contato form div.form_group input {
+    padding: 10px;
+    font-size: 22px;
+    width: 100%
+}
+
+main#contato form div.form_group textarea {
+    padding: 10px;
+    font-size: 22px;
+    width: 100%;
+    resize: vertical;
+}
+
+main#contato form div.form_group button {
+    font-size: 15px;
+    margin: 20px 0px;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(241, 37, 10);
+    color: rgb(245, 244, 244);
+    border: none;
+}    
+
+main#contato .form_group {
+    margin-bottom: 25px;
+}
+
+.radio_group input {
+    font-size: 22px;
+}
+
+.mapouter{
+    /* position: relative; */
+    text-align: right;
+    /* height: 200%; */
+    width: 63%;
+    /* background-color: red; */
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background-color: #eee;
+    height: 94%;
+    /* width: 100%; */
+}
+
+.coluna {
+    flex-grow: 1;
+}
+
+#line {
+    background-color: rgba(0, 0, 0, 0.281);
+    width: 100%;
+    height: 2px;
+}
+
+section.pt2 p {
+    font-size: 20px;
+}
+
+/* SOBRE */
+
+img#profile {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.301);
+    border-radius: 100%;
+    width: 300px;
+    margin: 150px 30px 30px 30px;
+    position: fixed;
+}
+
+#sobre {
+    margin: 70px 80px 0px 400px;
+}
+
+#sobre ol {
+    list-style-type: upper-roman;
+}
+
+#sobre ol li{
+    margin: 20px;
+}
+
+/* MUSICS */
+
+main.musics {
+    width: 80%;
+    /* height: 600px; */
+    margin: 0 auto;
+}
+
+main.musics section.faixa {
+    width: 99%;
+    /* height: 400px; */
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+main.musics section.faixa div {
+    flex: 1;
+    width: 100%;
+    margin: 10px;
+}
+
+main.musics section.faixa div iframe {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
