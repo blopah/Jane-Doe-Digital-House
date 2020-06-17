@@ -1,3 +1,5 @@
+/* GERAL */
+/* Importa a fonte e aplica-a */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 * {
@@ -5,6 +7,7 @@
     box-sizing: border-box;
 }
 
+/* Ocupa o espaço que das tags com atributo fixed  */
 #spacer {
     height: 100px;
 }
@@ -17,12 +20,19 @@ body {
 header {
     position: fixed;
     width: 100%;
+    /* height: 20vh; */
     top: 0;
     left: 0;
     text-align: center;
     background-color: #FFF;
     box-shadow: 0px 0px 10px black;
+    box-sizing: border-box;
+    z-index: 10;
 
+}
+
+nav ul {
+    padding-left: 0px;
 }
 
 nav ul li {
@@ -59,11 +69,40 @@ a:hover {
     color: rgb(241, 37, 10);
 }
 
+/* adaptacoes mobile */
+
+@media (max-width: 650px) {
+
+    nav ul li {
+        padding: 10px 10px 10px 10px;
+    }
+
+    nav ul li a {
+        font-size: 1.3em;
+        /* background-color: red; */
+    }
+
+    header {
+        min-width: 360px;
+    }
+
+    #spacer {
+        height: 130px;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+}
+
 /* HOME */
 
 #banner {
+    position: relative;
     width: 100%;
-    margin-top: -120px;
+    /* height: 65vw; */
+    z-index: 9;
 }
 
 section.concept {
@@ -94,11 +133,34 @@ section.musics div:nth-of-type(2) ol {
     width: 100%;
     font-size: 21px;
     line-height: 70px;
+    padding-left: 0px;
 }
 
 section.musics div:nth-of-type(2) ol li span {
     color: #F9A826;
     font-weight: bold;
+}
+
+/* adaptacoes para mobile */
+
+@media (max-width: 650px) {
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    section.musics {
+        flex-direction: column;
+    }
+
+    section.musics div:nth-of-type(2) ol {
+        font-size: 15px;
+    }
+
 }
 
 /* CONTACT */
@@ -109,7 +171,6 @@ section.duas_colunas {
 }
 
 section.duas_colunas div {
-    flex-grow: 1;
     margin: 20px;
 }
 
@@ -156,7 +217,7 @@ main#contato form div.form_group button {
     background-color: rgb(241, 37, 10);
     color: rgb(245, 244, 244);
     border: none;
-}    
+}
 
 main#contato .form_group {
     margin-bottom: 25px;
@@ -195,13 +256,23 @@ section.pt2 p {
     font-size: 20px;
 }
 
+@media (max-width: 650px) {
+    main#contato section.duas_colunas {
+        flex-direction: column;
+    }
+    .mapouter {
+        width: 100%;
+    }
+}
+
+
 /* SOBRE */
 
 img#profile {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.301);
     border-radius: 100%;
     width: 300px;
-    margin: 150px 30px 30px 30px;
+    margin: 17% 30px 30px 30px;
     position: fixed;
 }
 
@@ -215,6 +286,28 @@ img#profile {
 
 #sobre ol li{
     margin: 20px;
+}
+
+/* adaptacoes mobile SOBRE */
+
+@media (max-width: 650px) {
+    img#profile {
+        position: relative;
+        /* margin-top: 0px; */
+    }
+
+    #sobre {
+        margin: 20px;
+    }
+
+    div#sobre h3 {
+        font-size: 2em;
+    }
+
+    div#sobre ol li span {
+        color: #F9A826;
+        font-weight: bold;
+    }
 }
 
 /* MUSICS */
@@ -247,3 +340,22 @@ main.musics section.faixa div iframe {
     height: 100%;
     width: 100%;
 }
+
+/* adaptacoes mobile MUSICS */
+
+@media (max-width: 650px) {
+    main.musics h2 {
+        font-size: 2em;
+        margin-top: -70px;
+    }
+
+    main.musics div.info h4 {
+        font-size: 2em;
+    }
+
+    main.musics section.faixa {
+        flex-direction: column;
+    }
+}
+
+
